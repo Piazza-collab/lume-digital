@@ -95,6 +95,31 @@ tbody td.us{background:var(--cream);color:var(--ink);font-weight:500;border-top-
 .cell{display:flex;gap:12px}
 .cell svg{flex-shrink:0;margin-top:3px}
 
+/* COMPARATIVO NO CELULAR (alternar) */
+.cmp-m{display:none}
+@media (max-width:760px){
+  .table-box{display:none}
+  .cmp-m{display:block}
+}
+.cmp-hint{margin:0 0 14px;font-size:14px;color:#A9B5A4}
+.cmp-toggle{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;background:rgba(243,238,226,.08);border:1px solid rgba(243,238,226,.14);border-radius:999px;margin-bottom:22px}
+.cmp-toggle button{font:inherit;font-size:14px;font-weight:700;min-height:48px;border:0;border-radius:999px;background:transparent;color:#C3CCBE;cursor:pointer;transition:background .2s,color .2s}
+.cmp-toggle button[aria-pressed="true"]{background:var(--cream);color:var(--ink)}
+.cmp-toggle button.lume[aria-pressed="false"]{color:var(--sun)}
+.cmp-list{display:flex;flex-direction:column;gap:12px}
+.cmp-card{border:1px solid rgba(243,238,226,.14);border-radius:16px;padding:20px;transition:background .25s,border-color .25s}
+.cmp-card h3{margin:0 0 8px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#A9B5A4}
+.cmp-card p{margin:0;display:flex;gap:12px;font-size:16px;line-height:1.55}
+.cmp-card svg{flex-shrink:0;margin-top:3px}
+.cmp-card .us{display:none}
+.cmp-m.is-lume .cmp-card{background:var(--cream);border-color:var(--cream)}
+.cmp-m.is-lume .cmp-card h3{color:var(--blue)}
+.cmp-m.is-lume .cmp-card .them{display:none}
+.cmp-m.is-lume .cmp-card .us{display:flex;color:var(--ink);font-weight:500}
+.cmp-card .them{color:#C3CCBE}
+.cmp-cta{display:flex;margin-top:18px;width:100%}
+.cmp-cta[hidden]{display:none}
+
 /* AMOSTRA */
 .blue{background:var(--blue);color:var(--cream-2)}
 .blue .eyebrow{color:#C9D0EE}
@@ -233,6 +258,22 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
         </tbody>
       </table>
     </div>
+
+    <!-- Versão do comparativo para celular: alterna entre "Sites comuns" e "Com a Lume Digital" -->
+    <div class="cmp-m" id="cmp-m">
+      <p class="cmp-hint">Toque para ver a diferença:</p>
+      <div class="cmp-toggle" role="group" aria-label="Comparar">
+        <button type="button" class="them" aria-pressed="true">Sites comuns</button>
+        <button type="button" class="lume" aria-pressed="false">Com a Lume Digital ✨</button>
+      </div>
+      <div class="cmp-list">
+        <div class="cmp-card"><h3>Ponto de partida</h3><p class="them"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E59A84" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Um modelo pronto da internet, igual ao de muita gente.</p><p class="us"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E3A7A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>O seu negócio, o seu público e o que torna você único.</p></div>
+        <div class="cmp-card"><h3>Foco principal</h3><p class="them"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E59A84" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Deixar a página bonita e aprovar rápido.</p><p class="us"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E3A7A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Uma experiência que leva o visitante até a reserva, a consulta ou a compra.</p></div>
+        <div class="cmp-card"><h3>Tecnologia</h3><p class="them"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E59A84" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Plugins demais, páginas pesadas e lentas no celular.</p><p class="us"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E3A7A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Código leve, carregamento rápido e pronto para o Google e para buscas com IA.</p></div>
+        <div class="cmp-card"><h3>Futuro</h3><p class="them"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E59A84" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Se o negócio cresce, é preciso refazer tudo do zero.</p><p class="us"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E3A7A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Uma base que cresce junto: alterações, lançamentos, produtos ou páginas novas. Você tem todo o acompanhamento necessário.</p></div>
+      </div>
+      <a href="#amostra" class="btn btn-sun cmp-cta" hidden>Quero um site assim</a>
+    </div>
   </div>
 </section>
 
@@ -368,6 +409,20 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
     if (btn) { btn.disabled = !canSend(); btn.textContent = canSend() ? 'Receber minha amostra grátis →' : 'Preencha nome e WhatsApp'; }
   });
   render();
+})();
+</script>
+<script>
+(function(){
+  var box=document.getElementById('cmp-m'); if(!box) return;
+  var bThem=box.querySelector('button.them'), bLume=box.querySelector('button.lume'), cta=box.querySelector('.cmp-cta');
+  function set(lume){
+    box.classList.toggle('is-lume', lume);
+    bLume.setAttribute('aria-pressed', lume ? 'true' : 'false');
+    bThem.setAttribute('aria-pressed', lume ? 'false' : 'true');
+    cta.hidden = !lume;
+  }
+  bThem.addEventListener('click', function(){ set(false); });
+  bLume.addEventListener('click', function(){ set(true); });
 })();
 </script>
 </body>
