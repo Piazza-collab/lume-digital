@@ -53,7 +53,7 @@ img,video{max-width:100%}
 .hero p{margin:0;font-size:19px;max-width:540px;color:#DCE3D6}
 .hero .row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .hero small{font-size:14px;color:#B9C4B3}
-@media (max-width:700px){.hero{min-height:0}.nav nav{gap:18px}.nav nav a:not(.btn){display:none}.hero-inner{padding:56px 0 72px}}
+@media (max-width:700px){.hero{min-height:0}.nav nav{gap:18px}.nav nav a:not(.btn){display:none}.hero-inner{padding:48px 0 32px}.hero .scrim{display:none}.hero video{position:relative;inset:auto;order:3;width:calc(100% - 36px);height:auto;aspect-ratio:16/9;margin:0 18px 56px;border-radius:14px;box-shadow:0 24px 50px -20px rgba(0,0,0,.7)}}
 
 /* MARQUEE */
 .marquee{border-bottom:1px solid var(--line-soft);display:flex;align-items:center;gap:28px;padding:26px 0 26px 32px}
@@ -178,7 +178,7 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 
 <!-- ========== TOPO COM VÍDEO ========== -->
 <section class="hero" id="topo">
-  <video src="assets/hero.mp4" poster="assets/poster.webp" autoplay muted loop playsinline aria-hidden="true"></video>
+  <video src="assets/hero.mp4" poster="assets/poster.webp" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
   <div class="scrim" aria-hidden="true"></div>
   <header>
     <div class="wrap nav">
