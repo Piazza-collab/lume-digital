@@ -71,7 +71,7 @@ img,video{max-width:100%}
 .hero p{margin:0;font-size:19px;max-width:540px;color:#DCE3D6}
 .hero .row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .hero small{font-size:14px;color:#B9C4B3}
-@media (max-width:700px){.hero{min-height:0}.nav nav{gap:18px}.nav nav a:not(.btn):not(.ig){display:none}.nav{gap:12px}.logo span{font-size:21px}.logo svg{width:22px;height:22px}.nav nav{gap:8px}.nav nav a.ig{width:40px;height:40px}.nav nav a.btn{padding:10px 14px;font-size:13px;min-height:40px}.hero-inner{padding:48px 0 32px}.hero .scrim{display:none}.hero video{position:relative;inset:auto;order:3;width:calc(100% - 36px);height:auto;aspect-ratio:16/9;margin:0 18px 56px;border-radius:14px;box-shadow:0 24px 50px -20px rgba(0,0,0,.7)}}
+@media (max-width:700px){.hero{min-height:0}.nav nav{gap:18px}.nav nav a:not(.btn):not(.ig):not(.nav-proj){display:none}.nav{gap:12px}.logo span{font-size:21px}.logo svg{width:22px;height:22px}.nav nav{gap:8px}.nav nav a.ig{width:40px;height:40px}.nav nav a.btn{padding:10px 14px;font-size:13px;min-height:40px}.hero-inner{padding:48px 0 32px}.hero .scrim{display:none}.hero video{position:relative;inset:auto;order:3;width:calc(100% - 36px);height:auto;aspect-ratio:16/9;margin:0 18px 56px;border-radius:14px;box-shadow:0 24px 50px -20px rgba(0,0,0,.7)}}
 
 @media (max-width:380px){.logo{gap:7px}.logo span{font-size:19px}.nav nav{gap:6px}.nav nav a.ig{width:38px;height:38px}.nav nav a.btn{padding:9px 12px;font-size:12.5px}}
 
@@ -260,6 +260,13 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 @media (max-width:700px){.nav-long{display:none}}
 
 @media (max-width:420px){.nav{gap:8px}.logo{gap:7px}.logo span{font-size:19px}.logo svg{width:19px;height:19px}.nav nav{gap:6px}.nav nav a.ig{width:36px;height:36px}.nav nav a.btn{padding:9px 12px;font-size:12px;min-height:36px}}
+
+/* BOTÃO PROJETOS PRONTOS NO MENU */
+.nav nav a.nav-proj{display:inline-flex;align-items:center;gap:9px;height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(243,238,226,.35);color:var(--cream-2);transition:border-color .15s,color .15s}
+.nav nav a.nav-proj:hover,.nav nav a.nav-proj[aria-current]{border-color:var(--sun);color:var(--sun)}
+@media (max-width:700px){.nav nav a.nav-proj{display:inline-flex;width:40px;height:40px;padding:0;justify-content:center}.nav-proj span{display:none}}
+@media (max-width:420px){.nav nav a.nav-proj{width:36px;height:36px}}
+@media (max-width:389px){.wrap.nav{padding-left:14px;padding-right:14px;gap:6px}.logo{gap:6px}.logo svg{width:17px;height:17px}.logo span{font-size:16px}.nav nav{gap:5px}.nav nav a.ig,.nav nav a.nav-proj{width:33px;height:33px}.nav nav a.ig svg{width:17px;height:17px}.nav nav a.btn{padding:8px 10px;font-size:11px;min-height:33px}}
 </style>
 </head>
 <body>
@@ -277,9 +284,9 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
       <nav aria-label="Principal">
         <a href="#metodo">Método</a>
         <a href="#diferencial">Diferencial</a>
-        <a href="#portfolio">Portfólio</a>
         <a href="#faq">Dúvidas</a>
         <a href="https://www.instagram.com/lumedigitalpage/" class="ig" target="_blank" rel="noopener" aria-label="Instagram da Lume Digital (@lumedigitalpage)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"/></svg></a>
+        <a href="/projetos" class="nav-proj"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Projetos prontos</span></a>
         <a href="#amostra" class="btn btn-sun"><span>Quero uma prévia<span class="nav-long"> do meu projeto</span></span></a>
       </nav>
     </div>
@@ -365,53 +372,6 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
       <a href="#amostra" class="btn btn-sun cmp-cta" hidden>Quero uma página assim</a>
     </div>
   </div>
-</section>
-
-<!-- ========== PORTFÓLIO: ESTUDO DE CASO ========== -->
-<section class="wrap section" id="portfolio">
-  <div class="cs-head stack">
-    <span class="eyebrow">Portfólio</span>
-    <h2 class="h2">Projetos que já estão <em>no ar.</em></h2>
-    <p>Projetos reais e o que aconteceu depois da publicação.</p>
-  </div>
-
-  <article class="cs" aria-labelledby="cs-vitor-title">
-    <div class="cs-top">
-      <div class="cs-media">
-        <div class="cs-phone">
-          <video id="cs-video" src="assets/portfolio/vitor-souza-tattoo.mp4" poster="assets/portfolio/vitor-souza-tattoo.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Navegação pela landing page de Vitor Souza Tattoo no celular"></video>
-        </div>
-        <div class="cs-ctrl"><a class="cs-pill" href="https://www.vitortatto.com.br/" target="_blank" rel="noopener">Vitor Souza Tattoo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-          <button type="button" class="cs-play" id="cs-play" aria-label="Pausar vídeo">
-            <svg class="i-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
-            <svg class="i-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-          </button></div>
-      </div>
-
-      <div class="cs-body">
-        <span class="cs-eyebrow">Estudo de caso</span>
-        <div class="cs-tags"><span>Landing page</span><span>Tatuagem</span></div>
-        <h3 id="cs-vitor-title">Vitor Souza Tattoo</h3>
-    <div class="cs-result" id="cs-result">
-      <div class="cs-time" aria-hidden="true">
-        <svg class="cs-ring" viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="45" fill="none" stroke-width="5"/><circle class="arc" cx="50" cy="50" r="45" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 50 50)"/><path d="M50 22v28l16 10" fill="none" stroke="#F3EEE2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="cs-num"><span class="lt">&lt;</span><span class="n">40</span><span class="u">min</span></div>
-      </div>
-      <div class="cs-quote">
-        <small>Resultado observado após a publicação</small>
-        <p>Em <strong>menos de 40 minutos</strong> após a publicação do site, o cliente já começou a receber pesquisas pelo site e solicitações de orçamento.</p>
-      </div>
-    </div>
-      </div>
-    </div>
-
-  </article>
-
-  <div class="cs-cta">
-    <p>Quer gerar oportunidades para o seu negócio também? <em>Vamos conversar.</em></p>
-    <a class="btn btn-sun" href="https://wa.me/5548998334865?text=Ol%C3%A1%2C%20vi%20o%20estudo%20de%20caso%20no%20site%20da%20Lume%20Digital%20e%20quero%20conversar%20sobre%20o%20meu%20projeto." target="_blank" rel="noopener">Falar com a Lume Digital <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-  </div>
-
 </section>
 
 <!-- ========== AMOSTRA GRÁTIS (QUESTIONÁRIO) ========== -->
@@ -565,23 +525,6 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
   bLume.addEventListener('click', function(){ set(true); });
 })();
 </script>
-<script>
-(function(){
-  var v=document.getElementById('cs-video'), pb=document.getElementById('cs-play');
-  if(v&&pb){
-    pb.addEventListener('click',function(){
-      if(v.paused){v.play();pb.classList.remove('paused');pb.setAttribute('aria-label','Pausar vídeo');}
-      else{v.pause();pb.classList.add('paused');pb.setAttribute('aria-label','Reproduzir vídeo');}
-    });
-  }
-  var r=document.getElementById('cs-result');
-  if(r){
-    if('IntersectionObserver' in window){
-      var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ r.classList.add('in'); io.disconnect(); } }); },{threshold:.35});
-      io.observe(r);
-    } else { r.classList.add('in'); }
-  }
-})();
-</script>
+
 </body>
 </html>
