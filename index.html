@@ -193,63 +193,114 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 /* WhatsApp flutuante */
 .wa-float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:50}
 
-/* PORTFÓLIO */
-.pf-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:44px}
-.pf-head .stack{max-width:620px}
-.pf-head .h2 em{color:var(--blue)}
-.pf-nav{display:flex;gap:10px}
-.pf-nav button{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:20px;cursor:pointer;transition:background .15s,border-color .15s}
-.pf-nav button:hover{background:var(--cream-2);border-color:var(--ink)}
-.pf-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:32px;padding:0 32px 18px;margin:0 -32px;scrollbar-width:none}
-.pf-track::-webkit-scrollbar{display:none}
-.pf-card{flex:0 0 min(1000px,88%);scroll-snap-align:start;display:grid;grid-template-columns:1.05fr 1fr;background:var(--ink);color:var(--cream-2);border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -36px rgba(22,36,28,.6)}
-.pf-shot{position:relative;display:block;min-height:640px;background:radial-gradient(120% 90% at 30% 20%,#2b3a31 0%,#0d1410 70%);overflow:hidden}
-.pf-phone{position:absolute;left:50%;top:44px;bottom:104px;aspect-ratio:432/832;transform:translateX(-50%);border-radius:34px;padding:8px;background:#050706;box-shadow:0 0 0 1px rgba(243,238,226,.16),0 40px 70px -30px rgba(0,0,0,.9);transition:transform .5s ease}
-.pf-shot:hover .pf-phone{transform:translateX(-50%) translateY(-6px)}
-.pf-phone video{display:block;width:100%;height:100%;object-fit:cover;border-radius:27px;background:#000}
-.pf-pill{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);white-space:nowrap;display:flex;align-items:center;justify-content:center;padding:15px 34px;border:1px solid rgba(243,238,226,.18);transition:background .15s,color .15s;border-radius:999px;background:rgba(10,14,12,.78);backdrop-filter:blur(8px);color:var(--cream-2);font-weight:600;font-size:16px}
-.pf-shot:hover .pf-pill{background:var(--sun);color:var(--ink)}
-.pf-body{padding:40px 40px 36px;display:flex;flex-direction:column;gap:22px}
-.pf-tags{display:flex;flex-wrap:wrap;gap:8px}
-.pf-tags span{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px;border:1px solid rgba(243,238,226,.25);color:#C3CCBE}
-.pf-tags span:first-child{background:var(--sun);border-color:var(--sun);color:var(--ink)}
-.pf-body h3{margin:0;font-family:var(--serif);font-weight:500;font-size:38px;line-height:1.05}
-.pf-body>p{margin:0;color:#C3CCBE;font-size:16px}
-.pf-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
-.pf-list li{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:14px 0;border-top:1px solid rgba(243,238,226,.14)}
-.pf-list li:last-child{border-bottom:1px solid rgba(243,238,226,.14)}
-.pf-list b{font-family:var(--serif);font-size:24px;line-height:1;color:var(--sun);font-weight:500}
-.pf-list strong{display:block;font-size:15px;color:var(--cream-2)}
-.pf-list span{display:block;font-size:14px;line-height:1.5;color:#A9B5A4;margin-top:2px}
-.pf-body .btn{align-self:flex-start;margin-top:auto}
-.pf-next{flex:0 0 min(340px,78%);scroll-snap-align:start;border-radius:28px;border:1.5px dashed var(--line);display:flex;flex-direction:column;justify-content:center;gap:18px;padding:40px 34px;background:var(--cream-2)}
-.pf-next svg{width:54px;height:54px}
-.pf-next h3{margin:0;font-family:var(--serif);font-weight:500;font-size:34px;line-height:1.05}
-.pf-next p{margin:0;color:var(--body);font-size:16px}
-.pf-next .btn{align-self:stretch;text-align:center;padding-left:20px;padding-right:20px}
-@media (max-width:860px){.pf-card{grid-template-columns:1fr}.pf-shot{min-height:560px}.pf-body{padding:28px 24px 28px}.pf-body h3{font-size:32px}.pf-nav{display:none}}
-@media (max-width:600px){.pf-track{padding:0 18px 18px;margin:0 -18px;scroll-padding-left:18px;gap:16px}.pf-head{margin-bottom:32px}}
-
-
-
-/* PORTFÓLIO NO CELULAR: versão compacta */
-@media (max-width:860px){
-  .pf-shot{min-height:400px}
-  .pf-phone{top:26px;bottom:88px;border-radius:26px;padding:6px}
-  .pf-phone video{border-radius:21px}
-  .pf-pill{bottom:22px;padding:12px 26px;font-size:15px}
-  .pf-body{gap:16px;padding:24px 22px 26px}
-  .pf-body h3{font-size:30px}
-  .pf-body>p{font-size:15px;line-height:1.6}
-  .pf-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .pf-list li,.pf-list li:last-child{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid rgba(243,238,226,.14);border-radius:12px}
-  .pf-list b{font-size:22px}
-  .pf-list strong{font-size:13px;line-height:1.3}
-  .pf-list span{display:none}
-  .pf-body .btn{display:none}
-  .pf-next{padding:30px 24px;gap:14px}
-  .pf-next h3{font-size:28px}
+/* PORTFÓLIO: ESTUDO DE CASO */
+.cs-head{max-width:680px;margin-bottom:44px}
+.cs-head .h2 em{color:var(--blue)}
+.cs{background:var(--ink);color:var(--cream-2);border-radius:32px;overflow:hidden;box-shadow:0 40px 80px -48px rgba(22,36,28,.7)}
+.cs-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr)}
+.cs-media{position:relative;min-height:680px;background:radial-gradient(110% 80% at 30% 15%,#2b3a31 0%,#0d1410 72%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:48px 24px}
+.cs-phone{position:relative;height:540px;aspect-ratio:432/832;border-radius:36px;padding:8px;background:#050706;box-shadow:0 0 0 1px rgba(243,238,226,.16),0 50px 80px -34px rgba(0,0,0,.95)}
+.cs-phone video{display:block;width:100%;height:100%;object-fit:cover;border-radius:29px;background:#000}
+.cs-ctrl{display:flex;align-items:center;gap:10px}
+.cs-play{flex-shrink:0;width:50px;height:50px;border-radius:50%;border:1px solid rgba(243,238,226,.35);background:rgba(10,14,12,.7);backdrop-filter:blur(6px);color:var(--cream-2);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .15s,transform .15s}
+.cs-play:hover{background:var(--sun);color:var(--ink);transform:scale(1.06)}
+.cs-play .i-play{display:none}
+.cs-play.paused .i-play{display:block}.cs-play.paused .i-pause{display:none}
+.cs-pill{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:999px;background:rgba(10,14,12,.8);border:1px solid rgba(243,238,226,.2);color:var(--cream-2);text-decoration:none;font-weight:600;font-size:15px;transition:background .15s,color .15s,border-color .15s}
+.cs-pill:hover{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.cs-body{padding:52px 52px 48px;display:flex;flex-direction:column;gap:22px}
+.cs-eyebrow{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--lime)}
+.cs-tags{display:flex;flex-wrap:wrap;gap:8px}
+.cs-tags span{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px;border:1px solid rgba(243,238,226,.25);color:#C3CCBE}
+.cs-tags span:first-child{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.cs-body h3{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(36px,3.4vw,48px);line-height:1}
+.cs-body>p{margin:0;color:#C3CCBE;font-size:16px;max-width:520px}
+.cs-label{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#A9B5A4;margin:6px 0 -6px}
+.cs-deliv{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cs-deliv li{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid rgba(243,238,226,.14);border-radius:14px;font-size:14px;font-weight:600;line-height:1.3}
+.cs-deliv b{font-family:var(--serif);font-weight:500;font-size:24px;line-height:1;color:var(--sun)}
+.cs-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:auto;padding-top:8px}
+.cs-btn{border:0;cursor:pointer;font-family:var(--sans)}
+.cs-btn:active{transform:scale(.97)}
+.cs-btn .plus{display:inline-flex;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--sun);align-items:center;justify-content:center;font-size:16px;line-height:1;transition:transform .25s}
+.cs-btn:hover .plus{transform:rotate(90deg)}
+.cs-link{color:var(--cream-2);border:1px solid rgba(243,238,226,.4);font-weight:600}
+.cs-link:hover{border-color:var(--sun);color:var(--sun)}
+/* resultado */
+.cs-result{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:48px;padding:48px 52px;border-top:1px solid rgba(243,238,226,.12);background:linear-gradient(90deg,rgba(232,194,58,.09),rgba(232,194,58,0) 60%)}
+.cs-time{display:flex;align-items:center;gap:22px}
+.cs-ring{width:116px;height:116px;flex-shrink:0}
+.cs-ring .track{stroke:rgba(243,238,226,.14)}
+.cs-ring .arc{stroke:var(--sun);stroke-dasharray:283;stroke-dashoffset:283;transition:stroke-dashoffset 1.6s cubic-bezier(.22,1,.36,1)}
+.cs-result.in .cs-ring .arc{stroke-dashoffset:94}
+.cs-num{display:flex;align-items:baseline;gap:6px;font-family:var(--serif);color:var(--sun);line-height:.85}
+.cs-num .lt{font-size:56px;font-weight:400}
+.cs-num .n{font-size:112px;font-weight:500;letter-spacing:-.03em}
+.cs-num .u{font-family:var(--sans);font-size:20px;font-weight:700;color:var(--cream-2);letter-spacing:.04em}
+.cs-quote small{display:block;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#A9B5A4;margin-bottom:10px}
+.cs-quote p{margin:0;font-family:var(--serif);font-size:clamp(24px,2.2vw,31px);line-height:1.25;color:var(--cream-2)}
+.cs-quote p strong{color:var(--sun);font-weight:600}
+.cs-num,.cs-quote{opacity:0;transform:translateY(12px);transition:opacity .8s ease,transform .8s ease}
+.cs-quote{transition-delay:.15s}
+.cs-result.in .cs-num,.cs-result.in .cs-quote{opacity:1;transform:none}
+/* cta */
+.cs-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;margin-top:40px;padding:32px 36px;border:1px solid var(--line);border-radius:24px;background:var(--cream-2)}
+.cs-cta p{margin:0;font-family:var(--serif);font-size:clamp(24px,2.4vw,32px);line-height:1.15;max-width:640px}
+.cs-cta p em{color:var(--blue)}
+/* modal de estratégias */
+.cs-modal{border:0;padding:0;margin:auto;width:min(760px,calc(100% - 32px));max-height:min(86vh,860px);border-radius:28px;background:var(--cream);color:var(--ink);box-shadow:0 40px 90px -30px rgba(0,0,0,.55);overflow:hidden}
+.cs-modal::backdrop{background:rgba(10,14,12,.62);backdrop-filter:blur(4px)}
+.cs-modal[open]{animation:csIn .38s cubic-bezier(.22,1,.36,1)}
+.cs-modal[open]::backdrop{animation:csFade .38s ease}
+.cs-modal.closing{animation:csOut .26s ease forwards}
+.cs-modal.closing::backdrop{animation:csFade .26s ease reverse forwards}
+@keyframes csIn{from{opacity:0;transform:translateY(28px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes csOut{to{opacity:0;transform:translateY(20px) scale(.97)}}
+@keyframes csFade{from{opacity:0}to{opacity:1}}
+.cs-modal-in{display:flex;flex-direction:column;max-height:inherit}
+.cs-mh{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:32px 36px 22px;border-bottom:1px solid var(--line)}
+.cs-mh small{display:block;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.cs-mh h4{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(28px,3vw,36px);line-height:1.05}
+.cs-x{flex-shrink:0;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer;font-size:22px;line-height:1;color:var(--ink);transition:background .15s,transform .2s}
+.cs-x:hover{background:var(--cream-2);transform:rotate(90deg)}
+.cs-mb{overflow-y:auto;padding:10px 36px 30px}
+.cs-st{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line-soft)}
+.cs-st:last-child{border-bottom:0}
+.cs-st .n{font-family:var(--serif);font-size:38px;line-height:.9;color:var(--blue)}
+.cs-st h5{margin:0 0 8px;font-size:17px;font-weight:700}
+.cs-st ul{margin:0;padding-left:18px;color:var(--body);font-size:15px;line-height:1.6}
+.cs-st li+li{margin-top:4px}
+.cs-mf{padding:18px 36px 26px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.cs-mf span{font-size:14px;color:var(--muted)}
+@media (max-width:980px){
+  .cs-top{grid-template-columns:1fr}
+  .cs-media{min-height:0;padding:36px 20px 30px;gap:20px}
+  .cs-phone{height:440px;border-radius:30px;padding:6px}
+  .cs-phone video{border-radius:24px}
+  .cs-body{padding:30px 24px 32px;gap:18px}
+  .cs-result{grid-template-columns:1fr;gap:22px;padding:34px 24px;background:linear-gradient(180deg,rgba(232,194,58,.1),rgba(232,194,58,0) 70%)}
 }
+@media (max-width:600px){
+  .cs{border-radius:26px}
+  .cs-head{margin-bottom:30px}
+  .cs-phone{height:400px}
+  .cs-deliv li{padding:11px 12px;font-size:13px;gap:9px}
+  .cs-deliv b{font-size:20px}
+  .cs-actions .btn{width:100%}
+  .cs-ring{width:88px;height:88px}
+  .cs-num .n{font-size:84px}.cs-num .lt{font-size:44px}.cs-num .u{font-size:17px}
+  .cs-cta{padding:26px 22px}
+  .cs-cta .btn{width:100%}
+  .cs-modal{width:100%;max-width:none;max-height:90vh;margin:auto 0 0;border-radius:24px 24px 0 0}
+  .cs-modal[open]{animation:csUp .36s cubic-bezier(.22,1,.36,1)}
+  .cs-modal.closing{animation:csDown .26s ease forwards}
+  .cs-mh{padding:24px 22px 18px}.cs-mb{padding:6px 22px 22px}.cs-mf{padding:16px 22px 22px}
+  .cs-mf .btn{width:100%}
+  .cs-st{grid-template-columns:40px 1fr;gap:12px}.cs-st .n{font-size:30px}
+}
+@keyframes csUp{from{transform:translateY(100%)}to{transform:none}}
+@keyframes csDown{to{transform:translateY(100%)}}
+@media (prefers-reduced-motion:reduce){.cs-modal[open],.cs-modal.closing,.cs-modal[open]::backdrop{animation:none}.cs-ring .arc,.cs-num,.cs-quote{transition:none}}
 
 @media (max-width:700px){.nav-long{display:none}}
 
@@ -361,45 +412,99 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
   </div>
 </section>
 
-<!-- ========== PORTFÓLIO ========== -->
-<section class="wrap section" id="portfolio" style="overflow:hidden">
-  <div class="pf-head">
-    <div class="stack">
-      <span class="eyebrow">Portfólio</span>
-      <h2 class="h2">Projetos que já estão <em>no ar.</em></h2>
-      <p>Sites e landing pages entregues de ponta a ponta: do design ao domínio, com tudo pronto para o Google.</p>
-    </div>
-    <div class="pf-nav" aria-hidden="true">
-      <button type="button" data-dir="-1" tabindex="-1">←</button>
-      <button type="button" data-dir="1" tabindex="-1">→</button>
-    </div>
+<!-- ========== PORTFÓLIO: ESTUDO DE CASO ========== -->
+<section class="wrap section" id="portfolio">
+  <div class="cs-head stack">
+    <span class="eyebrow">Portfólio</span>
+    <h2 class="h2">Projetos que já estão <em>no ar.</em></h2>
+    <p>O que desenvolvemos, as estratégias que usamos e o que aconteceu depois da publicação.</p>
   </div>
-  <div class="pf-track" id="pf-track">
-    <article class="pf-card">
-      <a class="pf-shot" href="https://www.vitortatto.com.br/" target="_blank" rel="noopener" aria-label="Abrir o site de Vitor Souza Tattoo em nova aba">
-        <span class="pf-phone"><video src="assets/portfolio/vitor-souza-tattoo.mp4" poster="assets/portfolio/vitor-souza-tattoo.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Navegação pela landing page de Vitor Souza Tattoo no celular"></video></span>
-        <span class="pf-pill">Vitor Souza Tattoo</span>
-      </a>
-      <div class="pf-body">
-        <div class="pf-tags"><span>Landing page</span><span>Tatuagem</span></div>
-        <h3>Vitor Souza Tattoo</h3>
-        <p>Landing page para um tatuador com agenda aberta, pensada para transformar quem chega pelo Instagram em pedidos de orçamento no WhatsApp.</p>
-        <ul class="pf-list">
-          <li><b>1</b><div><strong>Landing page sob medida</strong><span>Página profissional e responsiva, com as informações organizadas e botões de contato em destaque.</span></div></li>
-          <li><b>2</b><div><strong>Domínio e segurança</strong><span>Registro e configuração do domínio próprio, conexão com a página e HTTPS/SSL.</span></div></li>
-          <li><b>3</b><div><strong>SEO</strong><span>Títulos, descrições e palavras-chave relevantes, com ajustes de estrutura e desempenho.</span></div></li>
-          <li><b>4</b><div><strong>Google Search Console</strong><span>Verificação do domínio, envio do sitemap e acompanhamento da indexação.</span></div></li>
-        </ul>
-        <a class="btn btn-sun" href="https://www.vitortatto.com.br/" target="_blank" rel="noopener">Ver site no ar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+
+  <article class="cs" aria-labelledby="cs-vitor-title">
+    <div class="cs-top">
+      <div class="cs-media">
+        <div class="cs-phone">
+          <video id="cs-video" src="assets/portfolio/vitor-souza-tattoo.mp4" poster="assets/portfolio/vitor-souza-tattoo.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Navegação pela landing page de Vitor Souza Tattoo no celular"></video>
+        </div>
+        <div class="cs-ctrl"><a class="cs-pill" href="https://www.vitortatto.com.br/" target="_blank" rel="noopener">Vitor Souza Tattoo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+          <button type="button" class="cs-play" id="cs-play" aria-label="Pausar vídeo">
+            <svg class="i-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg class="i-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button></div>
       </div>
-    </article>
-    <aside class="pf-next">
-      <svg viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="9" fill="#E8C23A"/><path d="M4 23 L21 3" stroke="#16241C" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <h3>O próximo projeto pode ser o seu.</h3>
-      <p>Receba uma prévia do seu site ou landing page, com a sua marca e sem compromisso.</p>
-      <a href="#amostra" class="btn btn-sun">Quero uma prévia do meu projeto</a>
-    </aside>
+
+      <div class="cs-body">
+        <span class="cs-eyebrow">Estudo de caso</span>
+        <div class="cs-tags"><span>Landing page</span><span>Tatuagem</span></div>
+        <h3 id="cs-vitor-title">Vitor Souza Tattoo</h3>
+        <p>Landing page para um tatuador com agenda aberta. O objetivo era apresentar o artista e o seu trabalho e levar quem visita direto para o pedido de orçamento no WhatsApp.</p>
+        <span class="cs-label">O que foi desenvolvido</span>
+        <ul class="cs-deliv">
+          <li><b>1</b>Landing page sob medida</li>
+          <li><b>2</b>Domínio próprio e HTTPS</li>
+          <li><b>3</b>SEO para o Google</li>
+          <li><b>4</b>Google Search Console</li>
+        </ul>
+        <div class="cs-actions">
+          <button type="button" class="btn btn-sun cs-btn" id="cs-open" aria-haspopup="dialog" aria-controls="cs-modal">Ver estratégias utilizadas <span class="plus" aria-hidden="true">+</span></button>
+          <a class="btn cs-link" href="https://www.vitortatto.com.br/" target="_blank" rel="noopener">Visitar o site <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-result" id="cs-result">
+      <div class="cs-time" aria-hidden="true">
+        <svg class="cs-ring" viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="45" fill="none" stroke-width="5"/><circle class="arc" cx="50" cy="50" r="45" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 50 50)"/><path d="M50 22v28l16 10" fill="none" stroke="#F3EEE2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="cs-num"><span class="lt">&lt;</span><span class="n">40</span><span class="u">min</span></div>
+      </div>
+      <div class="cs-quote">
+        <small>Resultado observado após a publicação</small>
+        <p>Em <strong>menos de 40 minutos</strong> após a publicação do site, o cliente já começou a receber pesquisas pelo site e solicitações de orçamento.</p>
+      </div>
+    </div>
+  </article>
+
+  <div class="cs-cta">
+    <p>Quer gerar oportunidades para o seu negócio também? <em>Vamos conversar.</em></p>
+    <a class="btn btn-sun" href="https://wa.me/5548998334865?text=Ol%C3%A1%2C%20vi%20o%20estudo%20de%20caso%20no%20site%20da%20Lume%20Digital%20e%20quero%20conversar%20sobre%20o%20meu%20projeto." target="_blank" rel="noopener">Falar com a Lume Digital <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
   </div>
+
+  <dialog class="cs-modal" id="cs-modal" aria-labelledby="cs-modal-title">
+    <div class="cs-modal-in">
+      <div class="cs-mh">
+        <div><small>Vitor Souza Tattoo · Estudo de caso</small><h4 id="cs-modal-title">Estratégias utilizadas</h4></div>
+        <button type="button" class="cs-x" data-close aria-label="Fechar">×</button>
+      </div>
+      <div class="cs-mb">
+        <div class="cs-st"><span class="n">1</span><div><h5>Atenção desde a primeira tela</h5><ul>
+          <li>Nome do artista e botão “Fazer orçamento” logo na abertura, sem precisar rolar a página.</li>
+          <li>Selo “Agenda aberta” no topo, que mostra disponibilidade imediata.</li>
+          <li>Visual escuro e minimalista, alinhado ao estilo do trabalho do Vitor.</li>
+          <li>Design responsivo, adaptado para celular, tablet e computador.</li>
+        </ul></div></div>
+        <div class="cs-st"><span class="n">2</span><div><h5>SEO e presença no Google</h5><ul>
+          <li>Títulos, descrições e palavras-chave relevantes configurados para as buscas.</li>
+          <li>Ajustes de estrutura e desempenho para facilitar a indexação.</li>
+          <li>Domínio próprio com HTTPS/SSL, que transmite segurança a quem visita.</li>
+          <li>Google Search Console: verificação do domínio, envio do sitemap e acompanhamento da indexação.</li>
+        </ul></div></div>
+        <div class="cs-st"><span class="n">3</span><div><h5>Credibilidade e informação organizada</h5><ul>
+          <li>Seção “O artista”, que apresenta a história do Vitor e a sua relação com o desenho.</li>
+          <li>Portfólio de trabalhos, para o cliente conhecer o estilo antes de pedir orçamento.</li>
+          <li>Informações em uma ordem clara: quem é, o que faz e como pedir.</li>
+        </ul></div></div>
+        <div class="cs-st"><span class="n">4</span><div><h5>Caminho direto até o orçamento</h5><ul>
+          <li>Botão “Fazer orçamento” já na primeira tela.</li>
+          <li>Botão de WhatsApp fixo, visível durante toda a navegação.</li>
+          <li>Seção final de Orçamento com o botão “Chamar no WhatsApp”.</li>
+        </ul></div></div>
+      </div>
+      <div class="cs-mf">
+        <span>Quer essas estratégias no seu negócio?</span>
+        <a class="btn btn-sun" href="https://wa.me/5548998334865?text=Ol%C3%A1%2C%20vi%20o%20estudo%20de%20caso%20no%20site%20da%20Lume%20Digital%20e%20quero%20conversar%20sobre%20o%20meu%20projeto." target="_blank" rel="noopener">Vamos conversar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+  </dialog>
 </section>
 
 <!-- ========== AMOSTRA GRÁTIS (QUESTIONÁRIO) ========== -->
@@ -555,10 +660,34 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 </script>
 <script>
 (function(){
-  var t=document.getElementById('pf-track'); if(!t) return;
-  document.querySelectorAll('.pf-nav button').forEach(function(b){
-    b.addEventListener('click',function(){ t.scrollBy({left:(+b.dataset.dir)*t.clientWidth*0.8,behavior:'smooth'}); });
-  });
+  var v=document.getElementById('cs-video'), pb=document.getElementById('cs-play');
+  if(v&&pb){
+    pb.addEventListener('click',function(){
+      if(v.paused){v.play();pb.classList.remove('paused');pb.setAttribute('aria-label','Pausar vídeo');}
+      else{v.pause();pb.classList.add('paused');pb.setAttribute('aria-label','Reproduzir vídeo');}
+    });
+  }
+  var m=document.getElementById('cs-modal'), ob=document.getElementById('cs-open');
+  if(m&&ob){
+    var open=function(){ if(typeof m.showModal==='function'){m.showModal();}else{m.setAttribute('open','');} document.body.style.overflow='hidden'; };
+    var close=function(){
+      if(!m.open) return;
+      m.classList.add('closing');
+      var done=function(){m.classList.remove('closing'); if(typeof m.close==='function'){m.close();}else{m.removeAttribute('open');} document.body.style.overflow=''; ob.focus();};
+      if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){done();}else{setTimeout(done,250);}
+    };
+    ob.addEventListener('click',open);
+    m.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',close);});
+    m.addEventListener('click',function(e){ if(e.target===m) close(); });
+    m.addEventListener('cancel',function(e){ e.preventDefault(); close(); });
+  }
+  var r=document.getElementById('cs-result');
+  if(r){
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ r.classList.add('in'); io.disconnect(); } }); },{threshold:.35});
+      io.observe(r);
+    } else { r.classList.add('in'); }
+  }
 })();
 </script>
 </body>
