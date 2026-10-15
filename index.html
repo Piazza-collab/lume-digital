@@ -203,12 +203,12 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 .pf-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:32px;padding:0 32px 18px;margin:0 -32px;scrollbar-width:none}
 .pf-track::-webkit-scrollbar{display:none}
 .pf-card{flex:0 0 min(1000px,88%);scroll-snap-align:start;display:grid;grid-template-columns:1.05fr 1fr;background:var(--ink);color:var(--cream-2);border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -36px rgba(22,36,28,.6)}
-.pf-shot{position:relative;display:block;min-height:420px;background:radial-gradient(120% 90% at 30% 20%,#2b3a31 0%,#0d1410 70%);overflow:hidden}
-.pf-shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s ease}
-.pf-shot:hover img{transform:scale(1.03)}
-.pf-shot .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:44px;letter-spacing:.04em;color:rgba(243,238,226,.55)}
-.pf-pill{position:absolute;left:20px;right:20px;bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;border-radius:999px;background:rgba(10,14,12,.78);backdrop-filter:blur(8px);color:var(--cream-2);font-weight:600;font-size:16px}
-.pf-pill i{font-style:normal;color:var(--sun)}
+.pf-shot{position:relative;display:block;min-height:640px;background:radial-gradient(120% 90% at 30% 20%,#2b3a31 0%,#0d1410 70%);overflow:hidden}
+.pf-phone{position:absolute;left:50%;top:44px;bottom:104px;aspect-ratio:432/832;transform:translateX(-50%);border-radius:34px;padding:8px;background:#050706;box-shadow:0 0 0 1px rgba(243,238,226,.16),0 40px 70px -30px rgba(0,0,0,.9);transition:transform .5s ease}
+.pf-shot:hover .pf-phone{transform:translateX(-50%) translateY(-6px)}
+.pf-phone video{display:block;width:100%;height:100%;object-fit:cover;border-radius:27px;background:#000}
+.pf-pill{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);white-space:nowrap;display:flex;align-items:center;justify-content:center;padding:15px 34px;border:1px solid rgba(243,238,226,.18);transition:background .15s,color .15s;border-radius:999px;background:rgba(10,14,12,.78);backdrop-filter:blur(8px);color:var(--cream-2);font-weight:600;font-size:16px}
+.pf-shot:hover .pf-pill{background:var(--sun);color:var(--ink)}
 .pf-body{padding:40px 40px 36px;display:flex;flex-direction:column;gap:22px}
 .pf-tags{display:flex;flex-wrap:wrap;gap:8px}
 .pf-tags span{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px;border:1px solid rgba(243,238,226,.25);color:#C3CCBE}
@@ -227,7 +227,7 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 .pf-next h3{margin:0;font-family:var(--serif);font-weight:500;font-size:34px;line-height:1.05}
 .pf-next p{margin:0;color:var(--body);font-size:16px}
 .pf-next .btn{align-self:stretch;text-align:center;padding-left:20px;padding-right:20px}
-@media (max-width:860px){.pf-card{grid-template-columns:1fr}.pf-shot{min-height:0;aspect-ratio:4/3.4}.pf-body{padding:28px 24px 28px}.pf-body h3{font-size:32px}.pf-nav{display:none}}
+@media (max-width:860px){.pf-card{grid-template-columns:1fr}.pf-shot{min-height:560px}.pf-body{padding:28px 24px 28px}.pf-body h3{font-size:32px}.pf-nav{display:none}}
 @media (max-width:600px){.pf-track{padding:0 18px 18px;margin:0 -18px;scroll-padding-left:18px;gap:16px}.pf-head{margin-bottom:32px}}
 </style>
 </head>
@@ -352,9 +352,8 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
   <div class="pf-track" id="pf-track">
     <article class="pf-card">
       <a class="pf-shot" href="https://www.vitortatto.com.br/" target="_blank" rel="noopener" aria-label="Abrir o site de Vitor Souza Tattoo em nova aba">
-        <span class="ph" aria-hidden="true">Vitor Souza</span>
-        <img src="assets/portfolio/vitor-souza-tattoo.webp" alt="Página inicial da landing page de Vitor Souza Tattoo" loading="lazy" onerror="this.remove()">
-        <span class="pf-pill">Vitor Souza Tattoo <i>Ver site ↗</i></span>
+        <span class="pf-phone"><video src="assets/portfolio/vitor-souza-tattoo.mp4" poster="assets/portfolio/vitor-souza-tattoo.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Navegação pela landing page de Vitor Souza Tattoo no celular"></video></span>
+        <span class="pf-pill">Vitor Souza Tattoo</span>
       </a>
       <div class="pf-body">
         <div class="pf-tags"><span>Landing page</span><span>Tatuagem</span></div>
