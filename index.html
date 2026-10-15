@@ -28,12 +28,12 @@
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://www.lumedigitalpage.com.br/#empresa", "name": "Lume Digital", "url": "https://www.lumedigitalpage.com.br/", "logo": "https://www.lumedigitalpage.com.br/assets/icon-512.png", "image": "https://www.lumedigitalpage.com.br/assets/og.jpg", "description": "Criação de sites profissionais e landing pages sob medida para qualquer segmento, prontos em 5 a 7 dias.", "telephone": "+55-48-99833-4865", "email": "lumedigitalpage@gmail.com", "areaServed": {"@type": "Country", "name": "Brasil"}, "sameAs": ["https://www.instagram.com/lumedigitalpage/"], "knowsAbout": ["Criação de sites", "Landing pages", "SEO", "Sites responsivos"]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual a diferença entre site e landing page?", "acceptedAnswer": {"@type": "Answer", "text": "O site apresenta a sua empresa por completo, com várias seções ou páginas: serviços, sobre, contato. A landing page é uma página única, focada em uma ação só: vender um produto, captar contatos ou receber agendamentos. Ajudamos você a escolher o formato certo para o seu objetivo."}}, {"@type": "Question", "name": "A amostra grátis tem algum compromisso?", "acceptedAnswer": {"@type": "Answer", "text": "Nenhum. Você vê a prévia, conhece os valores e decide com calma."}}, {"@type": "Question", "name": "Vocês atendem o meu segmento?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Cada projeto é pensado a partir do seu público, seja restaurante, clínica, loja de roupas ou prestador de serviço."}}, {"@type": "Question", "name": "Quanto tempo leva para ficar pronto?", "acceptedAnswer": {"@type": "Answer", "text": "De 5 a 7 dias, conforme a estrutura do site ou da landing page."}}, {"@type": "Question", "name": "Consigo atualizar depois?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Você terá acesso ao nosso acompanhamento e à manutenção do site ou da landing page."}}, {"@type": "Question", "name": "A página já vem preparada para aparecer no Google?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Entregamos o seu site ou landing page rápido, adaptado para celular e com a estrutura de SEO pronta para o Google encontrar o seu negócio."}}]}]</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#16241C; --cream:#FAF7F0; --cream-2:#F3EEE2; --blue:#2E3A7A; --sun:#E8C23A; --lime:#C9D35A;
   --muted:#5B6A60; --body:#46554B; --line:#DCD3BF; --line-soft:#E7E0D0;
-  --serif:'Cormorant Garamond', Georgia, serif; --sans:'Manrope', system-ui, sans-serif;
+  --serif:'IBM Plex Serif', Georgia, serif; --sans:'IBM Plex Serif', Georgia, serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -229,6 +229,25 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 .pf-next .btn{align-self:stretch;text-align:center;padding-left:20px;padding-right:20px}
 @media (max-width:860px){.pf-card{grid-template-columns:1fr}.pf-shot{min-height:560px}.pf-body{padding:28px 24px 28px}.pf-body h3{font-size:32px}.pf-nav{display:none}}
 @media (max-width:600px){.pf-track{padding:0 18px 18px;margin:0 -18px;scroll-padding-left:18px;gap:16px}.pf-head{margin-bottom:32px}}
+
+/* TIPOGRAFIA IBM PLEX SERIF: ajustes de tamanho e peso */
+body{font-size:16px;line-height:1.7}
+.h2{font-weight:400;font-size:clamp(30px,3.2vw,44px);line-height:1.15;letter-spacing:-.01em}
+.hero h1{font-weight:400;font-size:clamp(36px,4.8vw,66px);line-height:1.1;letter-spacing:-.02em}
+.hero p{font-size:17px}
+.logo span{font-size:22px;font-weight:500;letter-spacing:-.01em}
+.marquee-group{font-size:22px;font-weight:300}
+.steps .n{font-size:32px;font-weight:300}
+thead th.us{font-size:20px;font-weight:500}
+.quiz h3{font-size:clamp(22px,2.4vw,27px);font-weight:500;line-height:1.25}
+.foot .tag{font-size:16px;font-weight:300}
+.pf-body h3{font-size:30px;font-weight:400;line-height:1.15}
+.pf-list b{font-size:20px;font-weight:300}
+.pf-next h3{font-size:27px;font-weight:400;line-height:1.15}
+.faq h2{font-size:clamp(28px,3vw,38px)}
+.btn{font-weight:600;font-size:15px}
+.eyebrow{font-size:12px;letter-spacing:.16em}
+@media (max-width:700px){.logo span{font-size:19px}}
 </style>
 </head>
 <body>
@@ -382,7 +401,7 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
   <div class="wrap section grid-2">
     <div class="stack" style="gap:22px">
       <span class="eyebrow">Amostra grátis</span>
-      <h2 class="h2" style="font-size:clamp(38px,4.4vw,58px)">Veja a sua página pronta <em>antes de decidir.</em></h2>
+      <h2 class="h2" style="font-size:clamp(32px,3.6vw,48px)">Veja a sua página pronta <em>antes de decidir.</em></h2>
       <p class="lead">Montamos uma prévia do site ou da landing page da sua empresa, com a sua marca, e apresentamos numa reunião rápida junto com os valores.</p>
       <ol class="how">
         <li><b>1</b>Você responde algumas perguntas rápidas (leva menos de 1 minuto).</li>
