@@ -317,20 +317,19 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 /* CELULAR 3D (imerso, sem painel de fundo) */
 .cs-media{background:none}
 .cs-stage{perspective:1700px;display:flex;justify-content:center;padding:10px 0 6px}
-.cs-device{position:relative;height:560px;aspect-ratio:432/832;transform-style:preserve-3d;transform:rotateY(-16deg) rotateX(7deg) rotateZ(1.5deg);transition:transform .5s cubic-bezier(.22,1,.36,1);animation:csFloat 6s ease-in-out infinite}
+.cs-device{position:relative;height:580px;aspect-ratio:0.52;transform-style:preserve-3d;transform:rotateY(-16deg) rotateX(7deg) rotateZ(1.5deg);transition:transform .5s cubic-bezier(.22,1,.36,1);animation:csFloat 6s ease-in-out infinite}
 @keyframes csFloat{0%,100%{translate:0 0}50%{translate:0 -10px}}
-.cs-edge{position:absolute;inset:0;border-radius:52px;background:linear-gradient(160deg,#4a504d,#151917 45%,#2b302d 75%,#0c0f0d);transform:translateZ(-16px) translateX(7px);box-shadow:0 60px 90px -30px rgba(0,0,0,.95),30px 40px 80px -20px rgba(0,0,0,.8)}
-.cs-frame{position:absolute;inset:0;border-radius:52px;padding:11px;background:linear-gradient(145deg,#6b716d 0%,#22272a 18%,#0d1012 50%,#262b2d 82%,#5d6360 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),inset 0 0 0 3px #050607}
-.cs-screen{position:relative;width:100%;height:100%;border-radius:42px;overflow:hidden;background:#000;box-shadow:0 0 0 2px #000}
-.cs-screen{box-sizing:border-box;padding-top:32px}
+.cs-edge{position:absolute;inset:0;border-radius:54px;background:linear-gradient(160deg,#4a504d,#151917 45%,#2b302d 75%,#0c0f0d);transform:translateZ(-16px) translateX(7px);box-shadow:0 60px 90px -30px rgba(0,0,0,.95),30px 40px 80px -20px rgba(0,0,0,.8)}
+.cs-frame{position:absolute;inset:0;border-radius:54px;padding:9px;background:linear-gradient(145deg,#6b716d 0%,#22272a 18%,#0d1012 50%,#262b2d 82%,#5d6360 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),inset 0 0 0 3px #050607}
+.cs-screen{position:relative;width:100%;height:100%;border-radius:46px;overflow:hidden;background:#000;box-shadow:0 0 0 2px #000}
 .cs-screen video{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
-.cs-island{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:30%;height:24px;border-radius:999px;background:#000;box-shadow:0 0 0 1px rgba(255,255,255,.04);z-index:2}
-.cs-glare{position:absolute;inset:0;border-radius:42px;background:linear-gradient(115deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,.04) 26%,rgba(255,255,255,0) 42%);pointer-events:none;z-index:3}
+.cs-island{position:absolute;top:1.6%;left:50%;transform:translateX(-50%);width:29%;height:auto;aspect-ratio:126/37;border-radius:999px;background:#000;box-shadow:0 0 0 1px rgba(255,255,255,.04);z-index:2}
+.cs-glare{position:absolute;inset:0;border-radius:46px;background:linear-gradient(115deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,.04) 26%,rgba(255,255,255,0) 42%);pointer-events:none;z-index:3}
 .cs-btns{position:absolute;inset:0;pointer-events:none}
 .cs-btns i{position:absolute;width:4px;border-radius:3px;background:linear-gradient(90deg,#2a2f2c,#6b716d)}
 .cs-btns .a{left:-3px;top:15%;height:5%}.cs-btns .b{left:-3px;top:23%;height:9%}.cs-btns .c{left:-3px;top:34%;height:9%}.cs-btns .d{right:-3px;top:26%;height:14%;background:linear-gradient(270deg,#2a2f2c,#6b716d)}
 .cs-floor{width:62%;height:26px;margin:-6px auto 0;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.65),rgba(0,0,0,0));filter:blur(4px)}
-@media (max-width:980px){.cs-device{height:470px;transform:rotateY(-12deg) rotateX(6deg) rotateZ(1deg)}.cs-edge,.cs-frame{border-radius:44px}.cs-screen,.cs-glare{border-radius:35px}.cs-frame{padding:9px}.cs-island{height:19px;top:6px}.cs-screen{padding-top:27px}}
+@media (max-width:980px){.cs-device{height:470px;transform:rotateY(-12deg) rotateX(6deg) rotateZ(1deg)}.cs-edge,.cs-frame{border-radius:46px}.cs-screen,.cs-glare{border-radius:39px}.cs-frame{padding:7px}}
 @media (max-width:600px){.cs-device{height:430px}.cs-media{padding-top:30px}}
 @media (prefers-reduced-motion:reduce){.cs-device{animation:none;transition:none}}
 </style>
