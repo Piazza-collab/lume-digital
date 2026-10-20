@@ -364,6 +364,14 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 .pl-card li.pl-all{font-weight:600;padding-bottom:2px}
 .pl-card li.pl-all b{font-weight:700}
 .feat li.pl-all{color:var(--sun)}
+
+/* PLANOS: 2 CARTÕES + DESTAQUE DO DIAGNÓSTICO */
+.pl-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:860px;margin:0 auto}
+.pl-card li.pl-hl{padding:10px 12px;margin:0 -12px 4px;border-radius:12px;background:rgba(232,194,58,.2);color:var(--ink);line-height:1.35}
+.pl-card li.pl-hl strong{font-weight:700}
+.pl-card li.pl-hl .pl-ic{background:var(--sun);color:var(--ink)}
+.feat li.pl-hl{background:rgba(232,194,58,.12);color:var(--sun)}
+@media (max-width:960px){.pl-grid{grid-template-columns:1fr;max-width:480px}}
 </style>
 </head>
 <body>
@@ -478,7 +486,7 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
   <div class="pl-head">
     <span class="eyebrow">Planos</span>
     <h2 class="h2">Escolha o plano ideal para o <em>seu negócio.</em></h2>
-    <p>Todos os planos começam com um diagnóstico inicial de como você aparece no Google.</p>
+    <p>Os dois planos incluem um diagnóstico de SEO do seu site e da concorrência.</p>
   </div>
   <div class="pl-grid">
     <article class="pl-card">
@@ -488,7 +496,7 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
       <p class="pl-sub">+ R$ 80/mês de manutenção por 12 meses</p>
       <a class="pl-cta" href="https://wa.me/5548998334865?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20Landing%20Page%20da%20Lume%20Digital." target="_blank" rel="noopener">Quero este plano <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <span class="pl-inc">O que está incluso</span>
-      <ul><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Identidade visual da sua marca</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Adaptado para celular e computador</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Botões de contato e WhatsApp</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Domínio e site seguro (cadeado)</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>SEO inicial para o Google</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Diagnóstico inicial no Google</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Manutenção por 12 meses</li></ul>
+      <ul><li class="pl-hl"><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg></span><strong>Diagnóstico com análise de SEO do seu site e da concorrência</strong></li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Identidade visual da sua marca</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Adaptado para celular e computador</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Botões de contato e WhatsApp</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Domínio e site seguro (cadeado)</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Manutenção por 12 meses</li></ul>
     </article>
     <article class="pl-card feat"><span class="pl-badge">Mais escolhido</span>
       <h3>Site</h3>
@@ -497,16 +505,7 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
       <p class="pl-sub">+ R$ 80/mês de manutenção por 12 meses</p>
       <a class="pl-cta" href="https://wa.me/5548998334865?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20Site%20da%20Lume%20Digital." target="_blank" rel="noopener">Quero este plano <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <span class="pl-inc">O que está incluso</span>
-      <ul><li class="pl-all"><b>Tudo da Landing Page, mais:</b></li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Várias páginas e menus</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Cadastro de produtos e serviços</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Manutenção por 12 meses</li></ul>
-    </article>
-    <article class="pl-card">
-      <h3>Site + Plataforma de SEO IA</h3>
-      <p class="pl-desc">Para acompanhar o crescimento no Google todos os meses.</p>
-      <div class="pl-price"><span class="v">R$ 1.000</span><span class="per">/mês</span></div>
-      <p class="pl-sub">Site completo e plataforma inclusos</p>
-      <a class="pl-cta" href="https://wa.me/5548998334865?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20Site%20%2B%20Plataforma%20de%20SEO%20IA%20da%20Lume%20Digital." target="_blank" rel="noopener">Quero este plano <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <span class="pl-inc">O que está incluso</span>
-      <ul><li class="pl-all"><b>Tudo do Site, mais:</b></li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Acesso à Plataforma de SEO IA</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Posições, concorrentes e presença na IA</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Histórico mês a mês</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Manutenção inclusa no plano</li></ul>
+      <ul><li class="pl-hl"><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg></span><strong>Diagnóstico com análise de SEO do seu site e da concorrência</strong></li><li class="pl-all"><b>Tudo da Landing Page, mais:</b></li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Várias páginas e menus</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Cadastro de produtos e serviços</li><li><span class="pl-ic"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>Manutenção por 12 meses</li></ul>
     </article>
   </div>
   <p class="pl-note">Ficou em dúvida? <a href="#amostra">Peça uma prévia gratuita do seu projeto</a> e escolha com calma.</p>
