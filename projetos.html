@@ -332,6 +332,15 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 @media (max-width:980px){.cs-device{height:470px;transform:rotateY(-12deg) rotateX(6deg) rotateZ(1deg)}.cs-edge,.cs-frame{border-radius:46px}.cs-screen,.cs-glare{border-radius:39px}.cs-frame{padding:7px}}
 @media (max-width:600px){.cs-device{height:430px}.cs-media{padding-top:30px}}
 @media (prefers-reduced-motion:reduce){.cs-device{animation:none;transition:none}}
+
+/* VÁRIOS PROJETOS + AJUSTE DE CORTE NO COMPUTADOR */
+.cs+.cs{margin-top:40px}
+.cs-media{min-height:0;padding:72px 24px 56px}
+.cs-device{height:540px;aspect-ratio:var(--ar,.52)}
+@media (max-width:980px){.cs-media{padding:44px 20px 32px}.cs-device{height:470px}}
+@media (max-width:600px){.cs-device{height:430px}}
+.cs-word{flex-direction:column;align-items:flex-start;gap:8px}.cs-word .n{font-size:84px;letter-spacing:-.01em}.cs-word .u{white-space:nowrap}
+@media (max-width:600px){.cs-word .n{font-size:64px}}
 </style>
 </head>
 <body>
@@ -365,12 +374,12 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
   <article class="cs" aria-labelledby="cs-vitor-title">
     <div class="cs-top">
       <div class="cs-media">
-        <div class="cs-stage" id="cs-stage">
-          <div class="cs-device" id="cs-device">
+        <div class="cs-stage">
+          <div class="cs-device">
             <div class="cs-edge" aria-hidden="true"></div>
             <div class="cs-frame">
               <div class="cs-screen">
-                <video id="cs-video" src="assets/portfolio/vitor-souza-tattoo.mp4" poster="assets/portfolio/vitor-souza-tattoo.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Navegação pela landing page de Vitor Souza Tattoo no celular"></video>
+                <video src="assets/portfolio/vitor-souza-tattoo.mp4" poster="assets/portfolio/vitor-souza-tattoo.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Navegação pela landing page de Vitor Souza Tattoo no celular"></video>
                 <span class="cs-island" aria-hidden="true"></span>
                 <span class="cs-glare" aria-hidden="true"></span>
               </div>
@@ -380,7 +389,7 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
         </div>
         <div class="cs-floor" aria-hidden="true"></div>
         <div class="cs-ctrl"><a class="cs-pill" href="https://www.vitortatto.com.br/" target="_blank" rel="noopener">Vitor Souza Tattoo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-          <button type="button" class="cs-play" id="cs-play" aria-label="Pausar vídeo">
+          <button type="button" class="cs-play" aria-label="Pausar vídeo">
             <svg class="i-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
             <svg class="i-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
           </button></div>
@@ -395,7 +404,7 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
           <div><small>Antes</small><p>Um traço incrível, mas uma presença digital que não acompanhava o nível da arte.</p></div>
           <div><small>Depois</small><p>Um site profissional, estruturado com estratégias de posicionamento para aumentar a visibilidade no Google, sem anúncios e de forma orgânica.</p></div>
         </div>
-    <div class="cs-result" id="cs-result">
+    <div class="cs-result">
       <div class="cs-time" aria-hidden="true">
         <svg class="cs-ring" viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="45" fill="none" stroke-width="5"/><circle class="arc" cx="50" cy="50" r="45" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 50 50)"/><path d="M50 22v28l16 10" fill="none" stroke="#F3EEE2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <div class="cs-num"><span class="lt">&lt;</span><span class="n">40</span><span class="u">min</span></div>
@@ -403,6 +412,54 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
       <div class="cs-quote">
         <small>Resultado observado após a publicação</small>
         <p><strong>Menos de 40 minutos</strong> após a publicação, o site já gerava os primeiros contatos de potenciais clientes interessados no trabalho do Vitor.</p>
+      </div>
+    </div>
+      </div>
+    </div>
+
+  </article>
+
+  <article class="cs" aria-labelledby="cs-jakare-title" style="--ar:.575">
+    <div class="cs-top">
+      <div class="cs-media">
+        <div class="cs-stage">
+          <div class="cs-device">
+            <div class="cs-edge" aria-hidden="true"></div>
+            <div class="cs-frame">
+              <div class="cs-screen">
+                <video src="assets/portfolio/jakare-cell.mp4" poster="assets/portfolio/jakare-cell.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Navegação pela landing page da Jakaré Cell no celular"></video>
+                <span class="cs-island" aria-hidden="true"></span>
+                <span class="cs-glare" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="cs-btns" aria-hidden="true"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
+          </div>
+        </div>
+        <div class="cs-floor" aria-hidden="true"></div>
+        <div class="cs-ctrl"><span class="cs-pill">Jakaré Cell</span>
+          <button type="button" class="cs-play" aria-label="Pausar vídeo">
+            <svg class="i-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg class="i-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button></div>
+      </div>
+
+      <div class="cs-body">
+        <span class="cs-eyebrow">Estudo de caso</span>
+        <div class="cs-tags"><span>Landing page</span><span>Assistência técnica</span></div>
+        <h3 id="cs-jakare-title">Jakaré Cell</h3>
+        <p class="cs-story">A Jakaré Cell está há mais de 3 anos no mercado de assistência técnica e acessórios para celular.</p>
+        <div class="cs-ba">
+          <div><small>Antes</small><p>O WhatsApp recebia as mesmas perguntas todos os dias. Respostas repetitivas que tomavam o tempo da equipe.</p></div>
+          <div><small>Depois</small><p>Uma landing page personalizada, alinhada à identidade da marca, que chama atenção e reúne em um só lugar tudo o que a loja oferece.</p></div>
+        </div>
+    <div class="cs-result">
+      <div class="cs-time" aria-hidden="true">
+        <svg class="cs-ring" viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="45" fill="none" stroke-width="5"/><circle class="arc" cx="50" cy="50" r="45" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 50 50)"/><path d="M30 34h40a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H48l-12 10v-10h-6a6 6 0 0 1-6-6V40a6 6 0 0 1 6-6z" fill="none" stroke="#F3EEE2" stroke-width="4" stroke-linejoin="round"/></svg>
+        <div class="cs-num cs-word"><span class="n">Tudo</span><span class="u">em um só lugar</span></div>
+      </div>
+      <div class="cs-quote">
+        <small>Resultado</small>
+        <p>Com todas as informações em <strong>um só lugar</strong>, o cliente chega ao WhatsApp já sabendo o que a Jakaré Cell oferece. A conversa fica mais simples e o cliente, mais preparado para fechar.</p>
       </div>
     </div>
       </div>
@@ -461,20 +518,22 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
 
 <script>
 (function(){
-  var v=document.getElementById('cs-video'), pb=document.getElementById('cs-play');
-  if(v&&pb){
-    pb.addEventListener('click',function(){
-      if(v.paused){v.play();pb.classList.remove('paused');pb.setAttribute('aria-label','Pausar vídeo');}
-      else{v.pause();pb.classList.add('paused');pb.setAttribute('aria-label','Reproduzir vídeo');}
-    });
-  }
-  var r=document.getElementById('cs-result');
-  if(r){
-    if('IntersectionObserver' in window){
-      var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ r.classList.add('in'); io.disconnect(); } }); },{threshold:.35});
-      io.observe(r);
-    } else { r.classList.add('in'); }
-  }
+  document.querySelectorAll('.cs').forEach(function(card){
+    var v=card.querySelector('video'), pb=card.querySelector('.cs-play');
+    if(v&&pb){
+      pb.addEventListener('click',function(){
+        if(v.paused){v.play();pb.classList.remove('paused');pb.setAttribute('aria-label','Pausar vídeo');}
+        else{v.pause();pb.classList.add('paused');pb.setAttribute('aria-label','Reproduzir vídeo');}
+      });
+    }
+    var r=card.querySelector('.cs-result');
+    if(r){
+      if('IntersectionObserver' in window){
+        var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ r.classList.add('in'); io.disconnect(); } }); },{threshold:.35});
+        io.observe(r);
+      } else { r.classList.add('in'); }
+    }
+  });
 })();
 </script>
 <script>
@@ -489,10 +548,12 @@ footer{background:var(--ink);color:#A9B5A4;font-size:14px}
     document.addEventListener('keydown',function(e){ if(e.key==='Escape' && mm.classList.contains('open')) close(); });
     window.addEventListener('resize',function(){ if(window.innerWidth>700 && mm.classList.contains('open')) close(); });
   }
-  var st=document.getElementById('cs-stage'), dv=document.getElementById('cs-device');
-  if(st&&dv&&window.matchMedia('(hover:hover) and (prefers-reduced-motion: no-preference)').matches){
-    st.addEventListener('pointermove',function(e){ var r=st.getBoundingClientRect(); var x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5; dv.style.transform='rotateY('+(-16+x*16)+'deg) rotateX('+(7-y*10)+'deg) rotateZ(1.5deg)'; });
-    st.addEventListener('pointerleave',function(){ dv.style.transform=''; });
+  if(window.matchMedia('(hover:hover) and (prefers-reduced-motion: no-preference)').matches){
+    document.querySelectorAll('.cs-stage').forEach(function(st){
+      var dv=st.querySelector('.cs-device'); if(!dv) return;
+      st.addEventListener('pointermove',function(e){ var r=st.getBoundingClientRect(); var x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5; dv.style.transform='rotateY('+(-16+x*16)+'deg) rotateX('+(7-y*10)+'deg) rotateZ(1.5deg)'; });
+      st.addEventListener('pointerleave',function(){ dv.style.transform=''; });
+    });
   }
 })();
 </script>
